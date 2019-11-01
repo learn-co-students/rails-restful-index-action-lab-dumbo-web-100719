@@ -1,0 +1,9 @@
+<h1>All Students</h1>
+<ol>
+  <% @students.each do |student| %>
+    <li>
+      <strong>
+        <a href="/recipe/<%= student.id %>"><%= student.to_s %></a>
+    </li>
+  <% end %>
+</ol>
